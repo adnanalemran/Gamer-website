@@ -359,12 +359,13 @@ nav {
 .play-games-heading {
     margin: 0px auto;
     width: 400px;
+    padding: 40px;
 
 }
 
 .play-games-heading>h2 {
     text-align: right;
-    font-size: 48px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 60px;
@@ -378,91 +379,20 @@ nav {
 .play-games-heading>p {
     color: #534C64;
     text-align: right;
-    font-family: Work Sans;
-    font-size: 18px;
+    font-size: .75rem;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-  
-}
-
-
-
-
-/* Responsive Styles */
-@media screen and (max-width: 425px) {
-
-    /* Mobile Styles */
-    .nav-container,
-    .nav-items-container {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-items-container a {
-        margin-top: 1.25rem;
-        /* 20px */
-    }
-
-    .nav-items-container .login-btn {
-        width: 100%;
-        margin-bottom: 0.625rem;
-        /* 10px */
-    }
-
-    .follow-btn {
-        margin-bottom: 1.25rem;
-        /* 20px */
-    }
-
-    .banner-container {
-        flex-direction: column;
-    }
-
-    .banner-img,
-    .banner-text {
-        width: 100%;
-    }
-
-    .icons-container li {
-        padding-left: 0.625rem;
-        /* 10px */
-    }
-
-    .banner-text p {
-        padding-top: 1.875rem;
-        /* 30px */
-    }
-
-    .banner-btn {
-        padding-bottom: 1.875rem;
-        /* 30px */
-    }
-
-    .Online-games-cards {
-        flex-direction: column;
-    }
-
-    .Online-games-card-item {
-        width: 342px;
-        margin-bottom: 40px;
-
-    }
-
-
-    .Online-games-heading h2 {
-        font-size: 29px;
-    }
-
-    .Online-games-description p {
-        font-size: 11px;
-
-    }
-
-
-
 
 }
+
+.mini-image img{
+    width: 300px;
+    position: relative;
+    bottom: 300px;
+    right: 100px;
+}
+
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
 
