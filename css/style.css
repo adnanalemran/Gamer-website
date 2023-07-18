@@ -13,7 +13,8 @@
 body {
     font-family: 'Work Sans', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
@@ -338,6 +339,7 @@ nav {
     bottom: 300px;
     right: 100px;
     background-color: #FFF9FC;
+    border-radius: 8px;
 }
 
 .games-name-container {
@@ -399,6 +401,10 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
     padding: 25px 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .menu-item {
@@ -407,15 +413,51 @@ footer {
     font-weight: 600px;
     font-size: 18px;
 }
+
 .social-media-icons {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns as needed */
-    grid-gap: 10px; /* Adjust the gap between icons as needed */
-  }
-  
-  .social-media-icon {
-   
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+
+.social-media-icon {
     padding: 10px;
     text-align: center;
-  }
-  
+}
+
+.social-media-icon i {
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.side-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 25px 0px;
+}
+
+.site-item {
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.site-item a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+
+.footer-container>p {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

@@ -112,6 +112,14 @@
     .nav-menu{
         grid-template-columns: repeat(3, 1fr); 
     }
+    .social-media-icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .side-link {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 13px;
+        
+      }
 
 
 }
