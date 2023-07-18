@@ -1,28 +1,33 @@
 /* Global Styles */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
     --primary-color: #FF42A5;
+    --font-size-base: 16px;
 }
 
 body {
     font-family: 'Work Sans', sans-serif;
-    margin: 0;
 }
 
 /* Navigation Styles */
 nav {
     background-color: #fff;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 0px;
 }
 
 .nav-container {
-    min-height: 50px;
+    min-height: 3.125rem;
+    /* 50px */
     display: flex;
     align-items: center;
-    max-width: 1300px;
+    max-width: 81.25rem;
+    /* 1300px */
     margin: 0 auto;
 }
 
@@ -34,19 +39,20 @@ nav {
 }
 
 .logo-container img {
-    width: 86.041px;
-    height: 40px;
+    width: 5.378rem;
+    /* 86.041px */
+    height: 2.5rem;
+    /* 40px */
     object-fit: cover;
-    margin-right: 20px;
+    margin-right: 1.25rem;
+    /* 20px */
 }
 
 .logo-container p {
     text-align: center;
-    font-family: 'Work Sans';
-    font-size: 45px;
-    font-style: normal;
+    font-size: 2.8125rem;
+    /* 45px */
     font-weight: 700;
-    line-height: normal;
     margin: 0;
 }
 
@@ -57,20 +63,24 @@ nav {
 .nav-items-container {
     width: 50%;
     display: flex;
-    gap: 50px;
+    gap: 3.125rem;
+    /* 50px */
     align-items: center;
 }
 
 .nav-items-container a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5625rem;
+    /* 25px */
     color: #3C354F;
 }
 
 .nav-items-container .follow-btn {
-    border-radius: 8px;
+    border-radius: 0.5rem;
+    /* 8px */
     background: rgba(11, 2, 35, 0.10);
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
     font-weight: 700;
     color: black;
     text-align: center;
@@ -79,7 +89,8 @@ nav {
 .nav-items-container .follow-btn p {
     color: #3C354F;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
+    /* 18px */
     font-weight: 500;
 }
 
@@ -89,11 +100,13 @@ nav {
 }
 
 .follow-btn p {
-    margin-right: 10px;
+    margin-right: 0.625rem;
+    /* 10px */
 }
 
 .follow-btn a {
-    margin-right: 10px;
+    margin-right: 0.625rem;
+    /* 10px */
 }
 
 .follow-btn a.youtube-icon i {
@@ -107,12 +120,15 @@ nav {
 /* Banner Section */
 .banner-container {
     margin: auto;
-    min-width: 320px; 
-    max-width: 1300px; 
-    min-height: 50px;
+    min-width: 20rem;
+    /* 320px */
+    max-width: 81.25rem;
+    /* 1300px */
     display: flex;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0.625rem;
+    /* 10px */
+    border-radius: 0.625rem;
+    /* 10px */
 }
 
 .banner-text {
@@ -135,16 +151,17 @@ nav {
 }
 
 .banner-text p {
-    padding-top: 150px;
+    padding-top: 9.375rem;
+    /* 150px */
     color: #0B0223;
     text-align: center;
     font-family: 'Work Sans';
-    font-size: 48px;
-    font-style: normal;
+    font-size: 3rem;
+    /* 48px */
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .banner-text h1 {
@@ -153,10 +170,11 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 95px;
+    font-size: 5.9375rem;
+    /* 95px */
     font-weight: 800;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0;
 }
 
 .icons-container {
@@ -166,10 +184,13 @@ nav {
 
 .icons-container li {
     color: #534C64;
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* 20px */
     font-weight: 500;
-    margin-bottom: 10px;
-    padding-left: 120px;
+    margin-bottom: 0.625rem;
+    /* 10px */
+    padding-left: 7.5rem;
+    /* 120px */
 }
 
 .icons-container li i {
@@ -177,34 +198,109 @@ nav {
 }
 
 .banner-btn {
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 0.625rem;
+    padding-top: 40px;
+    /* 10px */
 }
 
 .primary-btn {
-    border-radius: 48px;
+    border-radius: 3rem;
+    /* 48px */
     background-color: var(--primary-color);
     display: inline-flex;
-    padding: 21px 40px;
+    padding: 1.3125rem 2.5rem;
+    /* 21px 40px */
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* 20px */
     font-weight: 600;
-    text-transform: uppercase;
-    border: 0px;
+    border: 0;
 }
 
 .secondary-btn {
-    border-radius: 48px;
+    border-radius: 3rem;
+    /* 48px */
     background-color: #4EC5F7;
     display: inline-flex;
-    padding: 21px 40px;
+    padding: 1.3125rem 2.5rem;
+    /* 21px 40px */
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* 20px */
     font-weight: 600;
     text-transform: uppercase;
-    border: 0px;
+    border: 0;
+}
+
+.Online-games-container {
+    padding-top: 120px;
+}
+
+
+
+.Online-games-heading h2 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    /* 48px */
+    font-weight: 700;
+}
+
+.Online-games-heading h2 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Online-games-description p {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding-bottom: 50px;
+
+}
+
+.Online-games-container {
+    min-width: 20rem;
+    /* 320px */
+    max-width: 81.25rem;
+    /* 1300px */
+    margin: 0 auto;
+}
+
+.Online-games-cards {
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+    /* 20px */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.Online-games-card-item {
+    width: 342px;
+    height: 400px;
+
+}
+
+.Online-games-cards .Online-games-card-item img {
+    width: 100%;
+    padding-bottom: 5px;
+    flex-shrink: 0;
+}
+
+.Online-games-cards .Online-games-card-item p {
+    width: 100%;
+    color: #534C64;
+    font-size: 0.8125rem;
+    /* 13px */
+    font-weight: 500;
 }
 
 
@@ -212,8 +308,32 @@ nav {
 
 
 
+.Online-games-card-item {
+    position: relative;
+   
+}
+.item-image:hover{
+    cursor: pointer;
+    filter: brightness(0.5); 
+    border-radius: 8px;
+}
 
-
+.Online-games-card-item:hover::after {
+    content: "\f144";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 48px;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.Online-games-card-item img {
+    transition: filter 0.5s ease;
+    
+}
 
 
 
@@ -225,6 +345,7 @@ nav {
 
 /* Responsive Styles */
 @media screen and (max-width: 425px) {
+
     /* Mobile Styles */
     .nav-container,
     .nav-items-container {
@@ -233,16 +354,19 @@ nav {
     }
 
     .nav-items-container a {
-        margin-top: 20px;
+        margin-top: 1.25rem;
+        /* 20px */
     }
 
     .nav-items-container .login-btn {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
+        /* 10px */
     }
 
     .follow-btn {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
+        /* 20px */
     }
 
     .banner-container {
@@ -255,43 +379,76 @@ nav {
     }
 
     .icons-container li {
-        padding-left: 10px;
+        padding-left: 0.625rem;
+        /* 10px */
     }
 
     .banner-text p {
-        padding-top: 30px;
+        padding-top: 1.875rem;
+        /* 30px */
     }
 
     .banner-btn {
-        padding-bottom: 30px;
+        padding-bottom: 1.875rem;
+        /* 30px */
     }
+
+    .Online-games-cards {
+        flex-direction: column;
+    }
+
+    .Online-games-card-item {
+        width: 342px;
+        margin-bottom: 40px;
+
+    }
+
+
+    .Online-games-heading h2 {
+        font-size: 29px;
+    }
+
+    .Online-games-description p {
+        font-size: 11px;
+
+    }
+
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 426px) and (max-width: 768px) {
+
     /* Tablet Styles */
-    .nav-container {
-        max-width: 800px;
+    .nav-items-container {
+        justify-content: center;
+    }
+
+    .follow-btn {
+        margin-top: 1.25rem;
+        /* 20px */
     }
 
     .banner-container {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .banner-img,
     .banner-text {
-        width: 50%;
+        width: 100%;
+    }
+
+    .icons-container li {
+        padding-left: 0.625rem;
+        /* 10px */
+    }
+
+    .banner-text p {
+        padding-top: 1.875rem;
+        /* 30px */
+    }
+
+    .banner-btn {
+        padding-bottom: 1.875rem;
+        /* 30px */
     }
 }
