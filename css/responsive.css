@@ -1,5 +1,8 @@
 /* Responsive Styles */
 @media screen and (max-width: 425px) {
+    body {
+        overflow-x: hidden;
+    }
 
     /* Mobile Styles */
     .nav-container,
@@ -26,6 +29,14 @@
 
     .banner-container {
         flex-direction: column;
+    }
+
+    .banner-img {
+        order: 1;
+    }
+
+    .banner-text {
+        order: 2;
     }
 
     .banner-img,
@@ -97,8 +108,9 @@
     }
 
     .games-name-container {
-        width: 80%;
-        margin: 0px auto;
+        width: 100%;
+        margin: 0px;
+        padding-top: 0;
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -109,37 +121,63 @@
     .game-item img {
         width: 30px;
     }
-    .nav-menu{
-        grid-template-columns: repeat(3, 1fr); 
+
+    .nav-menu {
+        grid-template-columns: repeat(3, 1fr);
     }
+
     .social-media-icons {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .side-link {
         grid-template-columns: repeat(2, 1fr);
         font-size: 13px;
-        
-      }
+
+    }
 
 
 }
 
-
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
+/* Responsive Styles */
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
 
     /* Tablet Styles */
+    .nav-container,
     .nav-items-container {
-        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items-container a {
+        margin-top: 1.25rem;
+        /* 20px */
+    }
+
+    .nav-items-container .login-btn {
+        width: 100%;
+        margin-bottom: 0.625rem;
+        /* 10px */
     }
 
     .follow-btn {
-        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
         /* 20px */
     }
 
     .banner-container {
         flex-direction: column;
+    }
+
+    .banner-img {
+        order: 1;
+    }
+
+    .banner-text {
+        order: 2;
     }
 
     .banner-img,
@@ -160,5 +198,78 @@
     .banner-btn {
         padding-bottom: 1.875rem;
         /* 30px */
+    }
+
+    .Online-games-cards {
+        flex-direction: column;
+    }
+
+    .Online-games-card-item {
+        width: 342px;
+        margin-bottom: 40px;
+    }
+
+    .Online-games-heading h2 {
+        font-size: 29px;
+    }
+
+    .Online-games-description p {
+        font-size: 11px;
+    }
+
+    .play-games-container {
+        flex-direction: column;
+    }
+
+    .play-games-heading,
+    .play-games-image {
+        width: 100%;
+    }
+
+    .play-games-image img {
+        padding-top: 30px;
+        display: block;
+        margin: 0px auto;
+        width: 80%;
+    }
+
+    .mini-image img {
+        width: 30%;
+        position: relative;
+        bottom: 30vh;
+        right: 30vh;
+    }
+
+    .play-games-heading h2,
+    p {
+        text-align: center;
+    }
+
+    .games-name-container {
+        width: 100%;
+        margin: 0px;
+        padding-top: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .game-item p {
+        font-size: 0.75rem;
+    }
+
+    .game-item img {
+        width: 30px;
+    }
+
+    .nav-menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .social-media-icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .side-link {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 13px;
     }
 }
