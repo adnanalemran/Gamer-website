@@ -1,8 +1,11 @@
+
+/* Responsive Styles */
 @media screen and (max-width: 400px) {
-    .nav-container {
-        flex-direction: column;
+    nav {
+        box-shadow: 0;
     }
 
+    .nav-container,
     .nav-items-container {
         flex-direction: column;
         width: 100%;
@@ -15,5 +18,33 @@
     .nav-items-container .login-btn {
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    .follow-btn {
+        margin-bottom: 20px;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        order: 1;
+    }
+
+    .banner-text {
+        order: 2;
+    }
+
+    .banner-img,
+    .banner-text {
+        width: 100%;
+    }
+
+    .icons-container li {
+        padding-left: 10px;
+    }
+    .banner-button{
+        font-size: 14px ;
     }
 }

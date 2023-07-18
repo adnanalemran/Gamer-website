@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #FF42A5;
+    --font-size-base: 16px;
 }
 
 body {
@@ -15,16 +16,13 @@ nav {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation Container */
 .nav-container {
-    min-height: 50px;
     display: flex;
     align-items: center;
     max-width: 1300px;
     margin: 0 auto;
 }
 
-/* Logo Container */
 .logo-container {
     display: flex;
     justify-content: center;
@@ -41,19 +39,15 @@ nav {
 
 .logo-container p {
     text-align: center;
-    font-family: 'Work Sans';
-    font-size: 45px;
-    font-style: normal;
+    font-size: 2.8125rem;
+    /* Equivalent to 45px */
     font-weight: 700;
-    line-height: normal;
 }
 
-/* Hive Section */
 .hive-section {
     color: var(--primary-color);
 }
 
-/* Navigation Items Container */
 .nav-items-container {
     width: 50%;
     display: flex;
@@ -63,13 +57,14 @@ nav {
 
 .nav-items-container a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5625rem;
+    /* Equivalent to 25px */
     color: #3C354F;
 }
 
 .nav-items-container .follow-btn {
     border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
+    background: rgba(11, 2, 35, 0.1);
     padding: 10px 20px;
     font-weight: 700;
     color: black;
@@ -78,12 +73,11 @@ nav {
 
 .nav-items-container .follow-btn p {
     color: #3C354F;
-    text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
+    /* Equivalent to 18px */
     font-weight: 500;
 }
 
-/* Follow Button */
 .follow-btn {
     display: flex;
     align-items: center;
@@ -102,31 +96,21 @@ nav {
 }
 
 .follow-btn a.tiktok-icon i {
-    color: #000000;
+    color: #000;
 }
 
-/* Banner Section */
 .banner-container {
     margin: auto;
-    min-width: 320px; 
-    max-width: 1300px; 
+    min-width: 320px;
+    max-width: 1300px;
     min-height: 50px;
     display: flex;
     padding: 10px;
     border-radius: 10px;
 }
 
+.banner-img,
 .banner-text {
-    width: 50%;
-    background-image: url("/images/Group14.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-}
-
-.banner-img {
     width: 50%;
 }
 
@@ -135,17 +119,26 @@ nav {
     object-fit: cover;
 }
 
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/Group14.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
 .banner-text p {
-    padding-top: 150px;
     color: #0B0223;
     text-align: center;
-    font-family: 'Work Sans';
-    font-size: 48px;
-    font-style: normal;
+    font-size: 3rem;
+    /* Equivalent to 48px */
     font-weight: 600;
-    line-height: normal;
+    line-height: 1;
     text-transform: uppercase;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .banner-text h1 {
@@ -154,10 +147,11 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 95px;
+    font-size: 5rem;
+    /* Equivalent to 80px */
     font-weight: 800;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0;
 }
 
 .icons-container {
@@ -166,10 +160,10 @@ nav {
 
 .icons-container li {
     color: #534C64;
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* Equivalent to 20px */
     font-weight: 500;
     margin-bottom: 10px;
-    padding-left: 120px;
 }
 
 .icons-container li i {
@@ -177,34 +171,29 @@ nav {
 }
 
 .banner-btn {
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     align-items: flex-start;
     gap: 10px;
 }
 
-.primary-btn {
+.primary-btn,
+.secondary-btn {
     border-radius: 48px;
-    background-color: var(--primary-color);
     display: inline-flex;
     padding: 21px 40px;
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* Equivalent to 20px */
     font-weight: 600;
     text-transform: uppercase;
-    border: 0px;
+    border: 0;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
 }
 
 .secondary-btn {
-    border-radius: 48px;
     background-color: #4EC5F7;
-    display: inline-flex;
-    padding: 21px 40px;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: 0px;
 }
-
-/* end nav bar */
