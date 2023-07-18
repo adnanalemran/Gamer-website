@@ -1,22 +1,25 @@
+/* Global Styles */
 * {
     box-sizing: border-box;
 }
 
 :root {
     --primary-color: #FF42A5;
-    --font-size-base: 16px;
 }
 
 body {
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
 }
 
+/* Navigation Styles */
 nav {
     background-color: #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
+    min-height: 50px;
     display: flex;
     align-items: center;
     max-width: 1300px;
@@ -39,9 +42,12 @@ nav {
 
 .logo-container p {
     text-align: center;
-    font-size: 2.8125rem;
-    /* Equivalent to 45px */
+    font-family: 'Work Sans';
+    font-size: 45px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
+    margin: 0;
 }
 
 .hive-section {
@@ -57,14 +63,13 @@ nav {
 
 .nav-items-container a {
     text-decoration: none;
-    font-size: 1.5625rem;
-    /* Equivalent to 25px */
+    font-size: 25px;
     color: #3C354F;
 }
 
 .nav-items-container .follow-btn {
     border-radius: 8px;
-    background: rgba(11, 2, 35, 0.1);
+    background: rgba(11, 2, 35, 0.10);
     padding: 10px 20px;
     font-weight: 700;
     color: black;
@@ -73,8 +78,8 @@ nav {
 
 .nav-items-container .follow-btn p {
     color: #3C354F;
-    font-size: 1.125rem;
-    /* Equivalent to 18px */
+    text-align: center;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -96,21 +101,31 @@ nav {
 }
 
 .follow-btn a.tiktok-icon i {
-    color: #000;
+    color: #000000;
 }
 
+/* Banner Section */
 .banner-container {
     margin: auto;
-    min-width: 320px;
-    max-width: 1300px;
+    min-width: 320px; 
+    max-width: 1300px; 
     min-height: 50px;
     display: flex;
     padding: 10px;
     border-radius: 10px;
 }
 
-.banner-img,
 .banner-text {
+    width: 50%;
+    background-image: url("/images/Group14.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-img {
     width: 50%;
 }
 
@@ -119,26 +134,17 @@ nav {
     object-fit: cover;
 }
 
-.banner-text {
-    display: flex;
-    flex-direction: column;
-    background-image: url("/images/Group14.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-}
-
 .banner-text p {
+    padding-top: 150px;
     color: #0B0223;
     text-align: center;
-    font-size: 3rem;
-    /* Equivalent to 48px */
+    font-family: 'Work Sans';
+    font-size: 48px;
+    font-style: normal;
     font-weight: 600;
-    line-height: 1;
+    line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .banner-text h1 {
@@ -147,23 +153,23 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 5rem;
-    /* Equivalent to 80px */
+    font-size: 95px;
     font-weight: 800;
     text-transform: uppercase;
-    margin: 0;
+    margin: 0px;
 }
 
 .icons-container {
     list-style: none;
+    padding-left: 0;
 }
 
 .icons-container li {
     color: #534C64;
-    font-size: 1.25rem;
-    /* Equivalent to 20px */
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
+    padding-left: 120px;
 }
 
 .icons-container li i {
@@ -171,29 +177,121 @@ nav {
 }
 
 .banner-btn {
-    margin: 0 auto;
+    margin: 0px auto;
     display: flex;
     align-items: flex-start;
     gap: 10px;
 }
 
-.primary-btn,
-.secondary-btn {
+.primary-btn {
     border-radius: 48px;
+    background-color: var(--primary-color);
     display: inline-flex;
     padding: 21px 40px;
     color: #FFF;
-    font-size: 1.25rem;
-    /* Equivalent to 20px */
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    border: 0;
-}
-
-.primary-btn {
-    background-color: var(--primary-color);
+    border: 0px;
 }
 
 .secondary-btn {
+    border-radius: 48px;
     background-color: #4EC5F7;
+    display: inline-flex;
+    padding: 21px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 425px) {
+    /* Mobile Styles */
+    .nav-container,
+    .nav-items-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items-container a {
+        margin-top: 20px;
+    }
+
+    .nav-items-container .login-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .follow-btn {
+        margin-bottom: 20px;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-img,
+    .banner-text {
+        width: 100%;
+    }
+
+    .icons-container li {
+        padding-left: 10px;
+    }
+
+    .banner-text p {
+        padding-top: 30px;
+    }
+
+    .banner-btn {
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    /* Tablet Styles */
+    .nav-container {
+        max-width: 800px;
+    }
+
+    .banner-container {
+        flex-direction: row;
+    }
+
+    .banner-img,
+    .banner-text {
+        width: 50%;
+    }
 }
