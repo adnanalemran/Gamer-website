@@ -500,6 +500,11 @@ footer {
   margin: auto 0px;
   background-color: none;
   border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-img-2 {
