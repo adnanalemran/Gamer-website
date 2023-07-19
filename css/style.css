@@ -303,11 +303,11 @@ nav {
 /* Play Games Section */
 .play-games-container {
   padding-top: 100px;
-  min-height: 3.125rem;
   display: flex;
   align-items: center;
   max-width: 81.25rem;
   margin: 0 auto;
+  margin-bottom: -100px;
 }
 
 .play-games-heading,
@@ -317,7 +317,6 @@ nav {
 
 .play-games-image {
   width: 634.833px;
-
   flex-shrink: 0;
 }
 
@@ -374,6 +373,10 @@ nav {
 
 
 
+
+
+/* CSS */
+
 .game-item {
   display: flex;
   align-items: center;
@@ -385,6 +388,7 @@ nav {
 
 .game-item:hover {
   border-color: #FF42A5;
+  cursor: pointer;
 }
 
 .game-item p {
@@ -393,6 +397,9 @@ nav {
   font-weight: 600;
   padding-left: 10px;
 }
+
+.game-item:hover p {
+  color: var(--primary-color); }
 
 footer {
   width: 100%;
@@ -411,7 +418,8 @@ footer {
 }
 
 .nav-menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   flex-wrap: wrap;
   padding: 25px 0px;
