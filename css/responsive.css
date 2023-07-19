@@ -108,10 +108,11 @@
     }
 
     .games-name-container {
+        overflow: hidden;
         width: 100%;
         margin: 0px;
-        padding-top: 0;
-        grid-template-columns: repeat(3, 1fr);
+        
+
     }
 
     .game-item p {
@@ -165,6 +166,8 @@
 
     .follow-btn {
         margin-bottom: 1.25rem;
+        align-items: center;
+        justify-content: center;
         /* 20px */
     }
 
@@ -261,11 +264,11 @@
     }
 
     .nav-menu {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .social-media-icons {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr), repeat(2, 1fr);
     }
 
     .side-link {
