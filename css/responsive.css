@@ -261,7 +261,7 @@
     }
 
     .Online-games-card-item {
-        width: calc(50% - 10px); /* Adjust the width of each item with spacing */
-        margin-bottom: 20px; /* Add some spacing between items */
+        width: calc(50% - 10px);
+        margin-bottom: 20px; 
     }
 }
