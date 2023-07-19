@@ -34,6 +34,7 @@ nav {
   align-items: center;
   max-width: 81.25rem;
   margin: 0 auto;
+
 }
 
 .logo-container {
@@ -116,6 +117,7 @@ nav {
   display: flex;
   padding: 0.625rem;
   border-radius: 0.625rem;
+  
 }
 
 .banner-text {

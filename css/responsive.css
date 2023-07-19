@@ -31,6 +31,29 @@
         flex-direction: column;
     }
 
+    .banner-text p {
+        font-size: 2rem;
+    }
+
+    .banner-text h1 {
+        font-size: 4rem;
+    }
+
+    .icons-container {
+        padding-top: 30px;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .icons-container li {
+
+        font-size: 1rem;
+    }
+
+    .banner-button {
+        font-size: 1rem;
+    }
+
     .banner-img {
         order: 1;
     }
@@ -111,7 +134,7 @@
         overflow: hidden;
         width: 100%;
         margin: 0px;
-        
+
 
     }
 
@@ -173,6 +196,9 @@
 
     .banner-container {
         flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+
     }
 
     .banner-img {
